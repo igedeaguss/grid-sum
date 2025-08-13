@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Grid Sum 3x3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Grid Sum</h1>
+        <p>Aturan:</p>
+        <ul>
+          <li>Isi kotak 3×3 dengan angka 1–9</li>
+          <li>Jumlah masing-masing baris sama dengan nilai di kiri.</li>
+          <li>Jumlah masing-masing kolom sama dengan nilai di atas.</li>
+          <li>Angka tidak boleh berulang dalam satu baris atau dalam satu kolom.</li>
+        </ul>
+      </header>
+
+      <section class="controls">
+        <button id="newPuzzleBtn" class="btn">Grid Baru</button>
+        <button id="clearBtn" class="btn">Bersihkan</button>
+        <button id="checkBtn" class="btn btn-primary">Cek Jawaban</button>
+      </section>
+
+      <section class="board-wrap">
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+        <table id="grid" class="grid" aria-label="Grid Sum 3x3">
+          <thead>
+            <tr id="colHeaderRow">
+              <th class="corner"></th>
+              <!-- kolom target akan dirender via JS -->
+            </tr>
+          </thead>
+          <tbody id="gridBody">
+            <!-- baris grid akan dirender via JS -->
+          </tbody>
+        </table>
+      </section>
+
+      <footer class="footer">
+        <small>igedeaguss 2025</small>
+      </footer>
+    </main>
+  </body>
+</html>
