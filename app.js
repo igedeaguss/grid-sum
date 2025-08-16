@@ -334,7 +334,6 @@
       }
       if (grid.every(row => row[c] !== null)) {
         if (sum !== colTargets[c]) {
-          markCol(c, 'sum-mismatch', true);
           ok = false;
         } else {
         }
